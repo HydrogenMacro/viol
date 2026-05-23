@@ -1,5 +1,6 @@
 import { css, html, LitElement, type CSSResultGroup, type TemplateResult } from "lit";
 import { customElement } from "lit/decorators.js";
+import { currentMenu } from "./menuPage";
 
 @customElement("viol-home-menu")
 export class HomeMenu extends LitElement {
@@ -16,12 +17,7 @@ export class HomeMenu extends LitElement {
     `;
     render(): TemplateResult {
         return html`
-            <svg viewBox="0 0 100 100">
-                <path d="">
-
-                
-                </path>
-            </svg>
+            <button @click="${() => currentMenu.set("level-select")}">start</button>
         `
     }
 }

@@ -16,7 +16,7 @@ export class MenuPage extends SignalWatcher(LitElement) {
         ${choose(currentMenu.get(), [
             ["home", () => html`<viol-home-menu></viol-home-menu>`],
             ["settings", () => html``],
-            ["level-select", () => html``],
+            ["level-select", () => html`<viol-level-select></viol-level-select>`],
         ])}`
     }
 }

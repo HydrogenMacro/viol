@@ -21,7 +21,7 @@ export class Root extends SignalWatcher(LitElement) {
   render(): TemplateResult {
     return html`${choose(currentPage.get(), [
       ["menu", () => html`<viol-menu-page></viol-menu-page>`],
-      ["game", () => html`<viol-menu-page></viol-menu-page>`],
+      ["game", () => html`<viol-game-page></viol-game-page>`],
     ])}`;
   }
 }
